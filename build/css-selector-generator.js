@@ -278,6 +278,7 @@
         items = [];
       }
       result = [[]];
+      items = items.slice(0, 3);
       for (i = k = 0, ref = items.length - 1; 0 <= ref ? k <= ref : k >= ref; i = 0 <= ref ? ++k : --k) {
         for (j = l = 0, ref1 = result.length - 1; 0 <= ref1 ? l <= ref1 : l >= ref1; j = 0 <= ref1 ? ++l : --l) {
           result.push(result[j].concat(items[i]));
